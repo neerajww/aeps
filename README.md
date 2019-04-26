@@ -9,5 +9,13 @@ The human brain is a fascinating signal processing system. Signals are relayed i
 In this tutorial, I will focus on recording EEG signals from the point-of-view of gaining insight into how brain processes speech. It may be true that recording electrodes placed over temporal lobes, that is, between the ears and halfway up to the midline of the head, are the best position to record changes specific to auditory cortex. However, often the electrodes near the vertex of head are more informative, these pick up activity from both hemispheres, including temporal lobe activity and that from attention centers in the frontal cortex. Activity from deeper brain regions, such as the brainstem, is also recorded, although with much smaller amplitude. Here, I will be using a 32 channel electrode cap for EEG recording. Having, more electrodes gives the flexibility of chosing the most informative electrode post-recording and while data analysis.
 
 ### What are AEPs?
-"During stimulation with sound, the EEG undergoes typical changes that are correlated in a time-locked fashion to changes in sound; that is, they occur more or less after a fixed interval and with a similar waveform after the change in sound. These changes are called auditory evoked potentials (AEPs)." - J. Eggermont. Extracting the AEPs from EEG requires presenting the same stimulus over several trials and averaging the EEG waveforms over these trials. The averaging assumes that given the stimulus, AEP is always the same waveform, whereas the background EEG changes more randomly (relatively). So, what changes in sound evoke AEPs?     
+"During stimulation with sound, the EEG undergoes typical changes that are correlated in a time-locked fashion to changes in sound; that is, they occur more or less after a fixed interval and with a similar waveform after the change in sound. These changes are called auditory evoked potentials (AEPs)." - J. Eggermont. Extracting the AEPs from EEG requires presenting the same stimulus over several trials and averaging the EEG waveforms over these trials. The averaging assumes that given the stimulus, AEP is always the same waveform, whereas the background EEG changes more randomly (relatively).
+What changes in sound evoke AEPs? 
+- for tonal stimuli, change can be in ampltude or frequency
+- for complex stimuli, it can be a phoneme, word, or surprise (un-) known word in the context of a sentence
+- still open for discovery!
+What is the peak latency between change in sound and peak in AEPs?
+- ranges between 1 ms to 500 ms.
+This implies that even after 500 ms the brain processing is still time-locked to the stimulus. Usually, a change in sound is detected within 50 ms in the peripheral auditory pathways however, detection of changes in complex stimuli (like incorrect word detection in sentence) can take longer duration as this detection requires decision from higher auditory pathways. 
+
 
