@@ -14,6 +14,7 @@ What changes in sound evoke AEPs?
 - for tonal stimuli, change can be in ampltude or frequency
 - for complex stimuli, it can be a phoneme, word, or surprise (un-) known word in the context of a sentence
 - still open for discovery!
+
 What is the peak latency between change in sound and peak in AEPs?
 - ranges between 1 ms to 500 ms.
 This implies that even after 500 ms the brain processing is still time-locked to the stimulus. Usually, a change in sound is detected within 50 ms in the peripheral auditory pathways however, detection of changes in complex stimuli (like incorrect word detection in sentence) can take longer duration as this detection requires decision from higher auditory pathways. 
