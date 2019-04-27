@@ -23,7 +23,7 @@ This implies that even after 500 ms the brain processing is still time-locked to
 
 ![](https://raw.githubusercontent.com/neerajww/aeps/master/media/images/illustration_aeps.jpg =250x500 "Temporal evolution of an AEP signal")
 
-[logo]: https://github.com/neerajww/aeps/blob/master/media/images/illustration_aeps.jpg "Logo Title Text 2"
+[logo]: https://raw.githubusercontent.com/neerajww/aeps/master/media/images/illustration_aeps.jpg "Logo Title Text 2"
 
 
 
