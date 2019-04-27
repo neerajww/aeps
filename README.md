@@ -21,7 +21,7 @@ This implies that even after 500 ms the brain processing is still time-locked to
 
 > AEPs just don't only capture response of central auditory pathways but the response of the auditory pathway from peripheral to central. The classification of AEPs is done based on latencies. Early peaks in the AEPs are associated with peripheral and brainstem response, and later peaks are associated with cortical response. To see an illustration on the temporal evolution of AEPs and its association with the auditory pathways [click here](https://raw.githubusercontent.com/neerajww/aeps/master/media/images/illustration_aeps.jpg).
 
-
+### What causes AEPs?
 
 
 
