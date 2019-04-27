@@ -19,11 +19,7 @@ What is the peak latency between change in sound and peak in AEPs?
 - ranges between 1 ms to 500 ms.
 This implies that even after 500 ms the brain processing is still time-locked to the stimulus. Usually, a change in sound is detected within 50 ms in the peripheral auditory pathways however, detection of changes in complex stimuli (like incorrect word detection in sentence) can take longer duration as this detection requires decision from higher auditory pathways.
 
-> AEPs just don't only capture response of central auditory pathways but the response of the auditory pathway from peripheral to central. The classification of AEPs is done based on latencies. Early peaks in the AEPs are associated with peripheral and brainstem response, and later peaks are associated with cortical response. For example, see the below illustration taken from Auditory Evoked Potentials: Basic Principles and clinical application, Burkard, Don, and Eggermont.
-
-![](https://raw.githubusercontent.com/neerajww/aeps/master/media/images/illustration_aeps.jpg =250x500 "Temporal evolution of an AEP signal")
-
-[logo]: https://raw.githubusercontent.com/neerajww/aeps/master/media/images/illustration_aeps.jpg "Logo Title Text 2"
+> AEPs just don't only capture response of central auditory pathways but the response of the auditory pathway from peripheral to central. The classification of AEPs is done based on latencies. Early peaks in the AEPs are associated with peripheral and brainstem response, and later peaks are associated with cortical response. To see an illustration on the temporal evolution of AEPs and its association with the auditory pathways [click here](https://raw.githubusercontent.com/neerajww/aeps/master/media/images/illustration_aeps.jpg).
 
 
 
