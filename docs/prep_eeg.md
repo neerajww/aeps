@@ -3,6 +3,7 @@ I have analyzed speech and audio signals in my research. They are interesting as
 
 ## How is EEG recorded?
 Enchephalo means "relating to brain" and graphy means "descriptive science". EEG refers to describing the electrical activity in brain. Unlike speech signal which comes out through the mouth and hence, a single sensor (the microphone) is often enough to record it, the electrical activity in brain is ditributed over a volume (shown in the below figure).
+<img src="https://github.com/neerajww/aeps/blob/master/media/images/illstration_brain_areas.png" width="40%">.
 
 
 
