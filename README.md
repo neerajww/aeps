@@ -25,10 +25,11 @@ This implies that even after 500 ms the brain processing is still time-locked to
 AEPs are a result of a summation of electro-chemical activity in a population of neurons. A neuron functions via two key types of electrical activities:
 - Action potentials
 - Postsynaptic potentials
+> A very good and quick introduction to voltage potentials in neurons is provided in [these videos](https://www.khanacademy.org/science/health-and-medicine/nervous-system-and-sensory-infor) at Khan Academy.
 
 **Action potentials** are discrete voltage spikes that travel along a neuron’s axon to the axon terminals, where they final cause release of neurotransmitters into the external medium. Surface electrodes cannot generally detect action potentials due to two reasons: short timing nature and non-aligned orientation of axons in a population of neurons. Action potentials can only be recorded if individual neurons fire at exactly the same time causing the voltages of the action potentials to sum. However, as neurons rarely fire at exactly the same time and also because axons are relatively random orientated, action potentials generally cancel each other out when it comes to its detection at scalp. Action potentials have a very short duration, about 1 ms and travel very fast, 1-100 m/s.
 
 **Postsynaptic Potentials (PSPs)** arise when neurotransmitters bind to receptors on the membrane of the postsynaptic cell, causing ion channels to open or close and leading to a graded change in potential across the cell membrane. PSPs are longer in duration than action potentials, lasting up to tens or even hundreds of milliseconds. They are generally confined to the dendrites of a neuron and occur instantaneously. As dendrites are oriented in parallel along the cortical sheet, these characteristics of PSPs mean that they can summate and are, thus, thought to largely contribute to the signal measured by EEG.
 
-> A very good and quick introduction to voltage potentials in neurons is provided in [these videos](https://www.khanacademy.org/science/health-and-medicine/nervous-system-and-sensory-infor) at Khan Academy.
+
 
