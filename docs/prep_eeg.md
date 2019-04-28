@@ -17,5 +17,5 @@ The recorded signal is composed of
 
 This is bundled in a single file, with an extension such as .bdf for data recorded using Biosemi system.
 
-
+** Pre-processing EEG data
 
