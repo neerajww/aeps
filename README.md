@@ -31,7 +31,7 @@ AEPs are a result of a summation of electro-chemical activity in a population of
 
 **Postsynaptic Potentials (PSPs)** arise when neurotransmitters bind to receptors on the membrane of the postsynaptic cell, causing ion channels to open or close and leading to a graded change in potential across the cell membrane. PSPs are longer in duration than action potentials, lasting up to tens or even hundreds of milliseconds. They are generally confined to the dendrites of a neuron and occur instantaneously. As dendrites are oriented in parallel along the cortical sheet, these characteristics of PSPs mean that they can summate and are, thus, thought to largely contribute to the signal measured by EEG.
 
-> AEPs does not measure action potentials, but rather postsynaptic potentials summed from a large population of neurons sharing timing of PSPs and having similar orientation of dendrites. These two features in a population of neurons are shared only at few places in the auditory pathways, namely, around cochlear nucleus and auditory cortex. To see an illustration of this [click here]()
+> AEPs does not measure action potentials, but rather postsynaptic potentials summed from a large population of neurons sharing timing of PSPs and having similar orientation of dendrites. These two features in a population of neurons are shared only at few places in the auditory pathways, namely, around cochlear nucleus and auditory cortex. To see an illustration of this [click here](https://github.com/neerajww/aeps/blob/master/media/images/illustration_auditory_pathways.png).
 
 
 
