@@ -9,8 +9,10 @@ Hence, it makes sense to use multiple sensors to record EEG. These sensors are c
 
 <img src="https://github.com/neerajww/aeps/blob/master/media/images/illustration_eeg_expt.png" width="60%">
 The recorded signal is composed of
-- N channels
+
+- N channels containing time-series data 
 - Sampled at Fs Hz (usually between 512-2048 Hz)
+- Location information of each channel
 - One event-trigger channel specifying the stimulus onset instants
 All this is bundled in a single file, with an extension such as .bdf for data recorded using Biosemi system.
 
