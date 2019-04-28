@@ -14,7 +14,8 @@ The recorded signal is composed of
 - Sampled at Fs Hz (usually between 512-2048 Hz)
 - Location information of each channel
 - One event-trigger channel specifying the stimulus onset instants
-All this is bundled in a single file, with an extension such as .bdf for data recorded using Biosemi system.
+
+This is bundled in a single file, with an extension such as .bdf for data recorded using Biosemi system.
 
 
 
