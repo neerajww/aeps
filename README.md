@@ -45,6 +45,6 @@ To the least AEP peaks signify detection of "sound change" at the specific cente
 - AEPs correspond to a summation of postsynaptic potentials from a large population of neurons.
 - AEPs are generated from specific locations in the auditory pathway.
 
-Going beyond this, if you are also interested to know more on analyzing EEG data click here. 
+Going beyond this, if you are also interested to know more on processing associated with analyzing EEG data [click here](https://github.com/neerajww/aeps/edit/master/docs/prep_eeg.md).
 
 
