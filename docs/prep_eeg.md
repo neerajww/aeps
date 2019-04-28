@@ -18,4 +18,4 @@ The recorded signal is composed of
 This is bundled in a single file, with an extension such as .bdf for data recorded using Biosemi system.
 
 ## Example Experimental Setup
-Here, I will present EEG data corresponding to a listening experiment of duration close to 114 mins. The pre-processing steps ares often independent of the underlying experiment. For now, we will go ahead without getting into the details of the task in the experiment.
+Here, I will present EEG data corresponding to a listening experiment of duration close to 114 mins. The pre-processing steps ares often independent of the underlying experiment. For now, we will go ahead without getting into the details of the task in the experiment. The only details we need is that the experiment has several trials, and the event-trigger channel contains the information about each trial (like trigger instant and task label/code corresponding to each trigger instant).
