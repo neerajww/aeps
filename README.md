@@ -36,5 +36,15 @@ AEPs are a result of a summation of electro-chemical activity in a population of
 ### What does AEP peaks signify?
 To the least AEP peaks signify detection of "sound change" at the specific center in the auditory pathway.
 - This is inspired the usage of early/mid latency AEPs for evaluating hearing impairments in new born babies. The signal is more specifically referred to as the auditory brain stem response. More interestingly, this does not require the baby to be awake and can be obtained quite fast. To know more [click here] (https://en.wikipedia.org/wiki/Auditory_brainstem_response)
-- The cortical AEPs (CAEPs) have inspired analysing behavior. The generally occur between 50-300 ms following stimulus onset; and are referred by P1-N1-P2 complex and the mismatch negativity (MMN). This is an active are of research, and there is an expectation of its application for monitoring attention while listening to natural converstations. While early latency AEPs (like ABRs) help in analyzing threshold responses, CAEPs are useful for analyzing suprathreshold responses (such as descrimination between two sounds). 
+- The cortical AEPs (CAEPs) have inspired analysing behavior. The generally occur between 50-300 ms following stimulus onset; and are referred by P1-N1-P2 complex and the mismatch negativity (MMN). This is an active are of research, and there is an expectation of its application for monitoring attention while listening to natural converstations. While early latency AEPs (like ABRs) help in analyzing threshold responses, CAEPs are useful for analyzing suprathreshold responses (such as descrimination between two sounds). These are also referred to as event-related potential (ERPs) as the are studied with respect to detection of an acoustic event in the stimulus.
+
+### Summary
+> After going through the above short-tutorial, I hope to have conveyed the following:
+- studying brain at the intersection of biology, electrical engineering, computational modeling, and human behavior (psychology) holds many challenges and fruits.
+- AEPs are like signature of neural responses to processing specific changes in sounds. This signature can be extracted by averaging several trials.
+- AEPs correspond to a summation of postsynaptic potentials from a large population of neurons.
+- AEPs are generated from specific locations in the auditory pathway.
+
+Going beyond this, if you are also interested to know more on analyzing EEG data click here. 
+
 
