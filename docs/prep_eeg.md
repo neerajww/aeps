@@ -17,5 +17,5 @@ The recorded signal is composed of
 
 This is bundled in a single file, with an extension such as .bdf for data recorded using Biosemi system.
 
-** Pre-processing EEG data
-
+## Example Experimental Setup
+Here, I will present EEG data corresponding to a listening experiment of duration close to 114 mins. The pre-processing steps ares often independent of the underlying experiment. For now, we will go ahead without getting into the details of the task in the experiment.
