@@ -12,7 +12,7 @@ The recorded signal is composed of
 
 - N channels containing time-series data 
 - Sampled at Fs Hz (usually between 512-2048 Hz)
-- Location information of each channel
+- Label information of each channel
 - One event-trigger channel specifying the stimulus onset instants
 
 This is bundled in a single file, with an extension such as .bdf for data recorded using Biosemi system.
@@ -23,7 +23,21 @@ Here, I will present EEG data corresponding to a listening experiment of duratio
 ## Pre-processing pipeline
 I will describe a sample processing pipeline. The coding language is Matlab based and I will be using the [EEGLAB library package](https://sccn.ucsd.edu/eeglab/index.php) to avoid re-creating some of the widely used function routines. There is no rocket science in any of these steps and this tutorial is designed to get things started! once you have the EEG recordings with you.
 
-```matlab
+1. Download the EEGLAB package: [click here](https://github.com/sccn/eeglab)
+2. Load data
+3. Load the channel location data
+4. Re-sample
+5. Copy data to contain only the cap electrode channels
+6. Detect bad channel and bad time segments
+7. Remove bad channels and re-create them by interpolating data from nearby channels
+8. Reference all channels to an all channel average reference
+9. Append the non-cap channel to the dataset, removing the bas time segments using the time mask from Step 6
+10. Epoch data
+11. Apply ICA to remove data for artifact inducing sources
+12. Visualize the cleaned data
+
+```
+tep 1
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
