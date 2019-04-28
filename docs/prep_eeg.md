@@ -22,3 +22,8 @@ Here, I will present EEG data corresponding to a listening experiment of duratio
 
 ## Pre-processing pipeline
 I will describe a sample processing pipeline. The coding language is Matlab based and I will be using the [EEGLAB library package](https://sccn.ucsd.edu/eeglab/index.php) to avoid re-creating some of the widely used function routines. There is no rocket science in any of these steps and this tutorial is designed to get things started! once you have the EEG recordings with you.
+
+```matlab
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
