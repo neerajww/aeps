@@ -70,7 +70,7 @@ EEG_proc.data(EEG_proc.nbchan,:) = EEG.data(36,EEG_proc.etc.clean_sample_mask==1
 EEG_proc.chanlocs(1,EEG_proc.nbchan-1).labels = 'EXG3';
 EEG_proc.chanlocs(1,EEG_proc.nbchan).labels = 'EXG4';
 EEG_proc = eeg_checkset( EEG_proc );
-EEG_proc = pop_editset(EEG_proc, 'chanlocs','./eeglab/eeglab/sample_data/biosemi_cap_32_EOG_2.locs');
+EEG_proc = pop_editset(EEG_proc, 'chanlocs','biosemi_cap_32_EOG_2.locs');
 EEG_proc = eeg_checkset( EEG_proc );
 ```
 10. Extract epochs by specifying event labels, time-window around onset of each event, and removing baseline using an average obtained from a time-window prior to event onset. 
