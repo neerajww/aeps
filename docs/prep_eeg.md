@@ -83,8 +83,10 @@ EEG_proc = eeg_checkset( EEG_proc );
 11. Apply ICA to EEG_proc
 ```
 EEG_proc = pop_runica(EEG_proc,'binica');
-EEG_proc.setname = sub_IDs{i};
+EEG_proc.setname = 01;
 EEG_proc = pop_saveset(EEG_proc, 'filename', [EEG_proc.setname '.set'], 'filepath', './');
 ```
+This will output and store to files: 01.set and 01.ftd. The eeglab keeps everything packed in the EEG structure (the .set file; the eeg signal is usually kept as float32 in a separate .fdt file). 
+
 12. Visualize the cleaned data
 
