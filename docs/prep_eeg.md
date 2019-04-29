@@ -49,7 +49,7 @@ EEG = pop_eegfiltnew(EEG, 2,45,8448,0,[],1);
 ```
 EEG_proc = pop_select( EEG,'nochannel',{'EXG1','EXG2','EXG3','EXG4'});
 ```
-6. Detect and remove bad time segments and bad channels
+6. Detect and remove bad time segments and bad channels. I am using the clean_raw data plugin from [click here](https://github.com/sccn/clean_rawdata).
 ```
 EEGorig = EEG_proc;
 EEG_proc = clean_rawdata(EEG_proc, 5, -1, 0.85, 4, 20, 0.25);
