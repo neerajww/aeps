@@ -26,9 +26,11 @@ I will describe a sample processing pipeline. The coding language is Matlab base
 1. Download the EEGLAB package: [click here](https://github.com/sccn/eeglab)
 2. Load data
 ```
-bdf_fname = ['sub_01_eeg32.bdf'];
+bdf_fname = ['sub_01_eeg32.bdf']; 
 EEG = pop_biosig(bdf_fname);
 ```
+This file contain 32 EEG Cap channels + 2 mastoids channel + 2 EOG channels. The 4 non-cap channels are named EX1, EX2, EX3, and EX4, respectively.
+
 3. Load the channel location data
 ```
 EEG_proc = pop_editset(EEG_proc, 'chanlocs','biosemi_cap_32_MAS_2_EOG_2.locs');
@@ -44,16 +46,45 @@ EEG = eeg_checkset( EEG );
 EEG = pop_eegfiltnew(EEG, 2,45,8448,0,[],1);
 ```
 5. Copy data to contain only the cap electrode channels
-6. Detect bad channel and bad time segments
-7. Remove bad channels and re-create them by interpolating data from nearby channels
-8. Reference all channels to an all channel average reference
-9. Append the non-cap channel to the dataset, removing the bas time segments using the time mask from Step 6
-10. Epoch data
-11. Apply ICA to remove data for artifact inducing sources
+```
+EEG_proc = pop_select( EEG,'nochannel',{'EXG1','EXG2','EXG3','EXG4'});
+```
+6. Detect and remove bad time segments and bad channels
+```
+EEGorig = EEG_proc;
+EEG_proc = clean_rawdata(EEG_proc, 5, -1, 0.85, 4, 20, 0.25);
+```
+7. Re-create data in bad channels by interpolating data from nearby channels
+```
+EEG_proc = pop_interp(EEG_proc, EEGorig.chanlocs, 'spherical');
+```
+8. Reference each channel to an all channel average reference
+```
+EEG_proc = pop_reref(EEG_proc, []);
+```
+9. Append the 2 EOG channels to the dataset after removing the bad time segments using the time mask from Step 6
+```
+EEG_proc.nbchan = EEG_proc.nbchan+2;
+EEG_proc.data(EEG_proc.nbchan-1,:) = EEG.data(35,EEG_proc.etc.clean_sample_mask==1);
+EEG_proc.data(EEG_proc.nbchan,:) = EEG.data(36,EEG_proc.etc.clean_sample_mask==1);
+EEG_proc.chanlocs(1,EEG_proc.nbchan-1).labels = 'EXG3';
+EEG_proc.chanlocs(1,EEG_proc.nbchan).labels = 'EXG4';
+EEG_proc = eeg_checkset( EEG_proc );
+EEG_proc = pop_editset(EEG_proc, 'chanlocs','./eeglab/eeglab/sample_data/biosemi_cap_32_EOG_2.locs');
+EEG_proc = eeg_checkset( EEG_proc );
+```
+10. Extract epochs by specifying event labels, time-window around onset of each event, and removing baseline using an average obtained from a time-window prior to event onset. 
+```
+EEG_proc = pop_epoch( EEG_proc, {  '11'  '12'}, [-0.5 2]);
+EEG_proc = eeg_checkset( EEG_proc );
+EEG_proc = pop_rmbase( EEG_proc, [-500    0]);
+EEG_proc = eeg_checkset( EEG_proc );
+```
+11. Apply ICA to EEG_proc
+```
+EEG_proc = pop_runica(EEG_proc,'binica');
+EEG_proc.setname = sub_IDs{i};
+EEG_proc = pop_saveset(EEG_proc, 'filename', [EEG_proc.setname '.set'], 'filepath', './');
+```
 12. Visualize the cleaned data
 
-```
-tep 1
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
