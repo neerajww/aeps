@@ -80,13 +80,18 @@ EEG_proc = eeg_checkset( EEG_proc );
 EEG_proc = pop_rmbase( EEG_proc, [-500    0]);
 EEG_proc = eeg_checkset( EEG_proc );
 ```
-11. Apply ICA to EEG_proc
+11. Apply ICA to EEG_proc: The commonly used ICA implementation is the runica. However, this is very slow. There is binary file available for the same technique which is 12x fatser. It can be obtained from [click here](https://sccn.ucsd.edu/wiki/Binica) and the instruction there will do th needful to make it running.
 ```
 EEG_proc = pop_runica(EEG_proc,'binica');
 EEG_proc.setname = 01;
 EEG_proc = pop_saveset(EEG_proc, 'filename', [EEG_proc.setname '.set'], 'filepath', './');
 ```
-This will output and store to files: 01.set and 01.ftd. The eeglab keeps everything packed in the EEG structure (the .set file; the eeg signal is usually kept as float32 in a separate .fdt file). 
+It will output and store two files: 01.set and 01.ftd. The eeglab keeps everything packed in the EEG structure (the .set file; the eeg signal is usually kept as float32 in a separate .fdt file). 
 
-12. Visualize the cleaned data
+12. Visualize the contributions of the estimated ICA components
 
+13. Remove the components corresponding to artifact inducing sources
+
+14. Project the data back to obtain the artifact removed channel data
+
+15. Epoch the data to visualize the ERPs
