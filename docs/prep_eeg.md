@@ -25,8 +25,24 @@ I will describe a sample processing pipeline. The coding language is Matlab base
 
 1. Download the EEGLAB package: [click here](https://github.com/sccn/eeglab)
 2. Load data
+```
+bdf_fname = ['sub_01_eeg32.bdf'];
+EEG = pop_biosig(bdf_fname);
+```
 3. Load the channel location data
+```
+EEG_proc = pop_editset(EEG_proc, 'chanlocs','biosemi_cap_32_MAS_2_EOG_2.locs');
+EEG = eeg_checkset( EEG );
+```
 4. Re-sample
+```
+EEG = pop_resample( EEG, 256);
+EEG = eeg_checkset( EEG );
+```    
+5. Filter the data
+```
+EEG = pop_eegfiltnew(EEG, 2,45,8448,0,[],1);
+```
 5. Copy data to contain only the cap electrode channels
 6. Detect bad channel and bad time segments
 7. Remove bad channels and re-create them by interpolating data from nearby channels
